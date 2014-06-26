@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddMessage(name="addmessage",method="post",action="/newmessage")
+        input#inputMessage(type="text", placeholder="Message", name="Message")
+        button#btnSubmit(type="submit") submit

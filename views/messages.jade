@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Messages
+    ul
+        each Message, i in msgs
+            li
+                h2= Message.msg

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= title
+    p Sign Up Here
+    form#formAddMessage(name="newUser",method="post",action="/signup")
+        input#userName(type="text", placeholder="Message", name="userName")
+        input#password(type="text", placeholder="Password", name="Password1")
+        input#confirmPassword(type="text", placeholder="Confirm Password", name="Password2")
+        button#btnSubmit(type="submit") submit
